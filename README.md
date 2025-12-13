@@ -1,7 +1,8 @@
 # LearnCheck! Formative Assessment Powered with AI 🤖✨
 
-![LearnCheck Banner](https://via.placeholder.com/1200x400?text=LearnCheck!+Formative+Assessment+Powered+with+AI)
-**Capstone Project Team A25-CS155 | Asah led by Dicoding**
+![LearnCheck](https://github.com/Learncheck-A25-CS155/LEARNCHECK-A25-CS155/blob/5efac83c8c4b6a0abd3329c05ce19197d3e9ceb9/learncheck-image.png)
+
+**Capstone Project Team A25-CS155 | Asah Led by Dicoding**
 
 LearnCheck! adalah sistem evaluasi formatif adaptif yang terintegrasi (iFrame) ke dalam platform pembelajaran (LMS Dicoding). Melalui soal otomatis, umpan balik instan, hint adaptif, ringkasan materi dan penilaian self-reflection, LearnCheck membantu peserta mengukur pemahaman konsep secara lebih mendalam.
 
