@@ -1,0 +1,26 @@
+Infrastruktur Data di Industri - Belajar Dasar AI
+Dicoding Mock
+Infrastruktur Data di Industri - Belajar Dasar AI
+Belajar Dasar AI
+️
+Infrastruktur Data di Industri
+Setelah kita mengenal data, alangkah baiknya jika kita mempelajari juga pengelolaan data, penyimpanan, hingga proses analisis data.
+Data infrastruktur mengacu kepada
+hardware
+,
+software
+, dan teknologi jaringan yang digunakan untuk mendukung proses pengelolaan data. Mengapa kita harus mengenal infrastruktur data?
+Tujuan dari infrastruktur data adalah untuk menyediakan pengelolaan data yang baik, memproses data, dan menganalisis data yang ada. Jika kalian penasaran dengan tujuan infrastruktur data tersebut, mari kita jabarkan satu per satu.
+Manajemen data
+Dengan menggunakan infrastruktur data yang baik, maka tempat penyimpanan data akan terpusat. Hal ini akan membuat data dalam sebuah organisasi menjadi lebih aman dan mudah untuk dikelola.
+Pemrosesan data
+Infrastruktur data menyediakan daya komputasi dan sumber daya yang dibutuhkan untuk memproses dan menganalisis data dengan jumlah besar. Hal ini memungkinkan organisasi untuk melakukan analisis dan membuat pemodelan yang kompleks sehingga dapat membantu mendapatkan informasi dan keputusan yang tepat berdasarkan data.
+Integrasi data
+Seperti yang sudah dijelaskan sebelumnya, dengan menggunakan infrastruktur data yang baik, kita dapat mengintegrasikan data dari berbagai sumber.
+Keamanan data
+Infrastruktur data menyediakan fitur dan protokol keamanan untuk melindungi data sensitif dari akses yang tidak sah, pencurian, atau penyalahgunaan. Hal ini memastikan kepatuhan terhadap peraturan dan praktik terbaik untuk keamanan dan privasi data.
+Nah, sampai di sini tentu Anda sudah paham tujuan dari infrastruktur data, bukan? Jika kalian masih memiliki pertanyaan jangan sungkan untuk bertanya di forum diskusi, ya!
+Sebelumnya
+Kriteria Data untuk AI
+Selanjutnya
+[Story] Apa yang Diperlukan untuk Membuat AI?

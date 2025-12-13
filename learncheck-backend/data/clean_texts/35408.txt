@@ -1,0 +1,23 @@
+[Story] Apa yang Diperlukan untuk Membuat AI? - Belajar Dasar AI
+Dicoding Mock
+[Story] Apa yang Diperlukan untuk Membuat AI? - Belajar Dasar AI
+Belajar Dasar AI
+️
+[Story] Apa yang Diperlukan untuk Membuat AI?
+Di kisah sebelumnya, Kai masih memiliki pertanyaan yang sangat mengganggu pikirannya. Ia telah mengetahui AI, contoh penerapannya, hingga alur untuk membangun AI. Namun, ia belum mengetahui bahwa AI membutuhkan data agar dapat menjalankan tugasnya dengan baik.
+Dengan rasa penasaran serta keinginan untuk mempermudah kehidupannya yang sangat tinggi, Kai membawa permasalahannya ini ke lingkungan universitas. Hingga akhirnya, ia bertanya ke salah satu dosennya dengan pertanyaan, “Apa yang membuat AI dapat mengerjakan tugasnya?”
+Dosennya menjawab bahwa AI bekerja dengan menggabungkan data dan melakukan pengolahan sehingga memungkinkan komputer untuk belajar dan melakukan tugasnya secara otomatis berdasarkan pola atau fitur dalam data. Kemudian, dosen tersebut menyarankan Kai untuk mempelajari data terlebih dahulu agar dapat membangun AI dengan baik.
+Selepas kuliah, Kai mempelajari hal yang disarankan oleh dosennya tersebut. Ia menemukan fakta di internet yang relevan dengan perkataan dosennya. Fakta tersebut mengatakan bahwa data yang digunakan pada pembangunan AI merupakan hal yang nantinya dapat dipelajari dan dilakukan oleh komputer untuk mengerjakan tugasnya.
+Saat ini, Kai sudah mengetahui bahwa ia perlu mempelajari data lebih dalam. Mulai dari pengenalan data hingga tipe-tipe data. Setelah mengetahui ilmu tentang data, motivasinya bertambah berkali-kali lipat sebab saat ini dia sudah tahu apa yang harus dilakukan untuk memulai membangun sebuah sistem yang dapat membantu tugas yang dimilikinya.
+Seiring berjalannya waktu, Kai menemukan sebuah permasalahan bahwa data yang digunakan untuk membangun AI tidak bisa dipakai begitu saja. Kualitas data yang digunakan pada proses pembangunan AI sangat memengaruhi hasil dari sistem yang dibuat.
+Berangkat dari permasalahan kualitas data, Kai menemukan bahwa masalah yang muncul pada data sangatlah beragam. Lalu, ia mengetahui beberapa permasalahan yang umum terjadi, seperti data yang tidak relevan (
+incorrect
+), data berbeda dengan yang lain (
+outlier
+), data duplikat, data kosong, data yang tidak benar, dan masih banyak lagi.
+Akhirnya, Kai mulai merasakan bahwa peran data pada proses pengembangan AI sangatlah penting. Hal itu membuatnya tidak sabar untuk melakukan implementasi berdasarkan data toko yang ia miliki agar dapat membantu meringankan tugasnya.
+Penasaran apa yang akan dibangun Kai pada kisah selanjutnya? Simak terus perjalanan Kai hingga ia dapat melakukan semua tugas di tokonya secara otomatis ya!
+Sebelumnya
+Infrastruktur Data di Industri
+Selanjutnya
+Tipe-Tipe Machine Learning

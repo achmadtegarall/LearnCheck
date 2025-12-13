@@ -1,0 +1,69 @@
+Tipe-Tipe Machine Learning - Belajar Dasar AI
+Dicoding Mock
+Tipe-Tipe Machine Learning - Belajar Dasar AI
+Belajar Dasar AI
+️
+Tipe-Tipe Machine Learning
+Machine learning dibagi menjadi beberapa kategori. Pada modul ini, kita akan mempelajari tiga kategori yang paling sering digunakan, yaitu supervised learning, unsupervised learning, dan reinforcement learning.
+Supervised learning dan unsupervised learning adalah dua kategori yang mungkin familier bagi Anda. Namun, pertanyaannya adalah berdasarkan apakah pembagian kategori tersebut? Benar, pembagian kategori tersebut berdasarkan karakteristik data dan jenis supervisi yang didapatkan oleh program selama pelatihan. Apa maksudnya dan apa bedanya dengan reinforcement learning? Simak pembahasan berikut, ya.
+Supervised Learning
+Supervised learning adalah kategori machine learning yang dalam proses pembelajarannya menggunakan data yang memiliki label atau jawaban. Ketika data dimasukkan ke dalam model machine learning, model akan melakukan perhitungan komputasi terhadap input yang diberikan berdasarkan algoritma yang digunakan. Proses perhitungan komputasi tersebut akan dilakukan secara berulang kali hingga model dapat mengenali karakteristik masing-masing input dan dapat memberikan prediksi label atau jawaban yang sesuai dengan data yang diberikan (data aktual).
+Perhatikan gambar di atas, bayangkan Anda memiliki kumpulan data buah-buahan yang terdiri dari apel dan stroberi beserta labelnya. Anda menginginkan model machine learning dapat mempelajari karakteristik kedua buah tersebut berdasarkan data dan label yang sudah ada. Kemudian, setelah model machine learning mempelajari karakteristik dari kedua buah tersebut, Anda mendapatkan sebuah model yang dapat melakukan klasifikasi terhadap buah apel dan stroberi. Akhirnya, saat Anda memberikan gambar dengan karakteristik serupa dengan apel maka model machine learning dapat mengenali gambar tersebut sebagai buah apel.
+Cerita di atas merupakan salah satu contoh penerapan dari supervised learning. Menarik, bukan? Lebih lanjut Andrew Ng, seorang ilmuwan AI dari Stanford University, menyatakan gagasan mengenai supervised learning. Menurutnya, supervised learning merupakan tipe machine learning yang hingga saat ini paling banyak digunakan pada berbagai bidang di industri.
+Supervised learning digunakan pada berbagai bidang dikarenakan penggunaannya yang jelas. Data dan jawaban (label) yang sudah dimiliki memungkinkan model machine learning mengerjakan tugas yang sudah ditentukan. Selain itu, supervised learning mudah dipahami dan performa akurasinya pun mudah diukur untuk dievaluasi.
+Supervised learning dapat membantu permasalahan yang sangat beragam. Dua buah pilar pada supervised learning yaitu
+classification
+dan
+regression
+merupakan contoh metode yang paling sering digunakan. Seperti kisah sebelumnya, model tersebut dapat menjalankan tugas untuk melakukan klasifikasi pada data buah yang baru. Selain contoh yang telah disebutkan, supervised learning dapat mengerjakan tugas seperti mengklasifikasikan
+spam
+pada pesan, memprediksi harga rumah, dan lain sebagainya.
+Unsupervised Learning
+Berbeda dengan supervised learning, pada unsupervised learning, data yang digunakan pada proses pembelajarannya tidak memiliki jawaban atau label. Sehingga, unsupervised learning melakukan proses belajar sendiri untuk melabeli atau mengelompokkan data.
+Perhatikan gambar di atas secara saksama. Anda mungkin sudah dapat menduga bahwa dataset yang digunakan tidak memiliki label bahkan masih berupa sayuran yang tercampur. Kemampuan metode ini dapat menemukan kesamaan dan perbedaan pada dataset sehingga membuatnya ideal untuk analisis data eksplorasi, strategi penjualan silang, segmentasi pelanggan, serta pengenalan gambar dan pola seperti contoh di atas.
+Mungkin rasa ingin tahu mengenai bagaimana unsupervised learning dapat mengeksplorasi data secara mandiri tumbuh di benak Anda. Unsupervised learning akan melakukan proses interpretasi, yaitu menemukan sebuah pola berdasarkan karakteristik dataset yang ada. Tahapan ini dibantu oleh algoritma yang dapat melakukan perhitungan komputasi untuk membantu menemukan pola atau struktur yang ada di dalamnya.
+Akhirnya, model unsupervised learning dapat melakukan
+processing
+sehingga dapat mengelompokkan dataset dari yang semula masih tercampur menjadi beberapa kelompok dengan karakteristik yang serupa.
+Dengan kata lain, berdasarkan cerita di atas, unsupervised learning dapat dilihat sebagai robot/mesin yang berusaha belajar menjawab pertanyaan secara mandiri tanpa ada jawaban yang disediakan manusia.
+Reinforcement Learning
+Reinforcement learning adalah teknik yang mempelajari bagaimana membuat keputusan terbaik secara berurutan untuk memaksimalkan ukuran sukses kehidupan nyata. Entitas pembuat keputusan atau yang biasa disebut
+agent
+belajar melalui proses
+trial
+dan
+error.
+Bagaimana maksudnya? Perhatikan gambar berikut.
+Gambar di atas merupakan cara kerja reinforcement learning (RL). Pada reinforcement learning, sebuah perangkat lunak yang disebut
+agent
+membuat pengamatan terhadap lingkungan dan melakukan aksi-aksi yang sesuai dari pengamatan yang dilakukan.
+Tujuan dari
+agent
+adalah untuk melakukan tindakan sehingga menghasilkan keputusan terbaik secara berurutan untuk memaksimalkan ukuran sukses kehidupan nyata. Dengan kata lain,
+agent
+memiliki tujuan untuk melakukan tindakan yang menghasilkan
+reward
+/hadiah.
+Reward
+akan diberikan jika agent berhasil melakukan tindakan yang telah ditentukan oleh developer dengan rumus Rt+1. Sebaliknya, ketika agent melakukan kesalahan maka akan diberi sanksi atau pengurangan point (St+1).
+Tujuan dari
+agent
+adalah untuk melakukan tindakan-tindakan yang terus menambah reward/hadiah. Analoginya seperti teorema hadiah dan hukuman. Kita sebagai manusia cenderung melakukan hal yang membuat kita senang (hadiah) dan menghindari kegiatan yang membuat kita menderita (hukuman). Demikian halnya dengan agent pada RL yang berusaha untuk mendapatkan banyak hadiah dan meminimalisasi hukuman.
+Agar kalian dapat memahami konsep reinforcement learning lebih jelas, mari kita simak ilustrasi cerita berikut.
+Kai merupakan seorang mahasiswa yang belum memiliki informasi terkait peraturan yang ada di kampusnya dan ia berperan sebagai
+agent
+pada kasus kali ini. Kai ingin mempelajari peraturan kelas sebagai lingkungan barunya. Kelas tersebut memiliki peraturan untuk tidak menggunakan handphone ketika jam pelajaran berlangsung. Dengan adanya peraturan tersebut, Kai harus belajar untuk menaati peraturan tersebut sehingga ia harus belajar fokus di kelas dan tidak boleh menggunakan handphone.
+Karena Kai belum mengetahui apa yang harus dilakukannya di kelas, ia perlu membuat
+policy
+di awal secara acak.
+Policy
+adalah panduan untuk agent melakukan aksi yang sesuai dengan lingkungannya. Nah, berdasarkan policy yang dibuat, agent akan melakukan aksi sesuai dengan policy tersebut. Setelah aksi dikerjakan, agent akan mendapatkan hadiah atau penalti.
+Pada aksi pertama, agent memilih menggunakan handphone sehingga mendapatkan penalti yaitu pengurangan poin.
+Karena Kai mendapatkan penalti, ia sebagai agent akan mengingatnya dan tentu menghindari penalti tersebut di masa depan. Setelah mendapat penalti, agent akan memperbarui
+policy
+-nya hingga ia bisa mendapatkan hadiah/poin sebanyak-banyaknya.
+Nah, sekarang Anda sudah mengetahui tipe-tipe machine learning. Setelah ini, kita akan mempelajari tahapan-tahapan yang perlu dilalui sebelum kita membuat project machine learning dengan berbagai tipe.
+Beli jamu ke Irian Jaya,
+Buat kamu tetap semangat, ya
+Sebelumnya
+[Story] Apa yang Diperlukan untuk Membuat AI?
