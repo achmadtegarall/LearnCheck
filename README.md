@@ -113,6 +113,22 @@ http://localhost:5173/?tutorial={tutorial_id}&user={user_id}
 | R254D5Y0029 | Achmad Tegar Almannudin | React & Back-End with AI |
 
 ---
+## 🎨 Mockup Project
+
+Mockup ini digunakan sebagai **acuan dalam pembuatan dan pengembangan project LearnCheck! Formative Assessment Powered with AI**.
+
+[Mockup LearnCheck](tinyurl.com/Prototype-Learncheck-A25-CS155)
+
+---
+## 🚀 Demo Application
+
+Demo aplikasi digunakan untuk **menampilkan hasil implementasi project LearnCheck! Formative Assessment Powered with AI** dan memperlihatkan alur penggunaan fitur secara langsung.
+
+### Link Demo App
+
+[Demo App LearnCheck!](https://drive.google.com/file/d/1EPnLfK2C_JDaZcI2epKKE3WTWUhLHp9y/view?usp=drive_link)
+
+---
 
 ## 📄 License
 
