@@ -50,7 +50,7 @@ LearnCheck dibangun menggunakan teknologi berikut:
 Ikuti langkah berikut untuk menjalankan LearnCheck secara lokal:
 ```
 # Clone repository
-git clone https://github.com/username/learncheck.git
+git clone https://github.com/Learncheck-A25-CS155/LEARNCHECK-A25-CS155.git
 
 # Masuk ke folder proyek
 cd learncheck
