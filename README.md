@@ -6,6 +6,15 @@
 
 LearnCheck! adalah sistem evaluasi formatif adaptif yang terintegrasi (iFrame) ke dalam platform pembelajaran (LMS Dicoding). Melalui soal otomatis, umpan balik instan, hint adaptif, ringkasan materi dan penilaian self-reflection, LearnCheck membantu peserta mengukur pemahaman konsep secara lebih mendalam.
 
+**Catatan Proyek:** Backend LearnCheck menambahkan logika pengambilan materi modul yang tidak hanya mengandalkan URL mock, tetapi juga mendukung penggunaan clean text hasil scraping sebagai opsi alternatif untuk mengurangi beban token LLM. Clean text ini bersifat opsional dan sistem tetap menggunakan URL mock materi apabila data tersebut tidak tersedia.
+
+**Cara Menggunakan Clean Text Data**
+1. Download dataset clean text melalui link berikut: https://drive.google.com/file/d/1txgF5HfxazZGCUNJLYloWv0fcu6F0QdD/view?usp=sharing
+2. Extract file ZIP tersebut.
+3. Masukkan hasil extract ke dalam folder ``data/clean_texts/`` yang tersedia setelah melakukan clone repository LearnCheck.
+4. Setelah data tersedia di folder ``data/clean_texts/``, backend akan dapat menggunakan clean text tersebut sebagai alternatif sumber materi saat proses generate soal.
+
+Jika folder ``data/clean_texts/`` kosong atau clean text tidak tersedia, sistem akan otomatis menggunakan URL mock materi seperti pada mekanisme sebelumnya.
 
 # 🔍 Features LearnCheck!
 
