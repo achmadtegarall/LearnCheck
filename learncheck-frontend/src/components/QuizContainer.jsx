@@ -221,11 +221,16 @@ const handleCheckAnswer = async () => {
       const newQuestionData = await resetSingleQuestion(
         tutorialId,
         userId,
-        qIndex
+        currentQuestionId
       );
 
       const updatedQuestions = [...quizState.questions];
-      updatedQuestions[qIndex] = newQuestionData.questions[0];
+      updatedQuestions[qIndex] = {
+        ...newQuestionData.questions[0],
+        question_index: quizState.questions[qIndex].question_index,
+        _unique: Date.now(),
+      };
+
 
       const newAnswers = { ...quizState.answers };
       const newCheckedStatus = { ...quizState.checkedStatus };
@@ -573,7 +578,7 @@ const secondaryBtn = `
 
           <div className="pb-5 px-4 sm:px-5 pt-4 sm:pt-3 border-b border-[var(--text-primary)]/20">
             <QuestionCard
-              key={currentQuestion.question_index}
+              key={`${currentQuestion.question_index}_${currentQuestion._unique || 0}`}
               questionData={currentQuestion}
               questionIndex={currentQuestionIndex + 1}
               selectedAnswers={quizState.answers[currentQuestion.question_index] || []}

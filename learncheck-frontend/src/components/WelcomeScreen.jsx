@@ -24,7 +24,6 @@ export default function WelcomeScreen({ tutorialTitle, onStartQuiz, userPrefs })
           transition-all duration-300
         "
       >
-
         <div className="flex flex-col items-center mb-3 sm:mb-5 text-center">
           <div className="relative mb-0 sm:mb-0">
             <div className="absolute inset-0 bg-[var(--blue-primary)]/20 rounded-full blur-2xl animate-pulse"></div>

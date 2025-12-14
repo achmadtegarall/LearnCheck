@@ -65,7 +65,6 @@ const redWrapper = isDark
     >
       <div className="w-[var(--max-width-card)]">
 
-        {/* HEADER */}
         <header
           className="
             px-4 sm:px-6 py-3 sm:py-4
@@ -97,7 +96,6 @@ const redWrapper = isDark
             rounded-b-2xl shadow bg-[var(--bg-secondary)]
           "
         >
-
           <div className="mb-6 text-center">
             <h1 className="font-heading font-bold text-[var(--text-primary)]">
               Hasil Refleksi Belajar

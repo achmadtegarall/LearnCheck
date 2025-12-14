@@ -102,7 +102,7 @@ export default function QuestionCard({
     <div
       className=
        "w-full pt-2 sm:pt-5">
-    
+
       <p
         className={`
           font-body sm:font-body lg:font-body

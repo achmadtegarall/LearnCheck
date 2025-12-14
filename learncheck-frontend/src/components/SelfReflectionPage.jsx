@@ -23,7 +23,7 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
       "
     >
       <div className="w-[var(--max-width-card)]">
-        
+
         <header
           className="
             px-4 sm:px-6 py-3 sm:py-4
@@ -57,7 +57,6 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
             transition
           "
         >
-
           <div className="mb-6 text-center">
             <h1 className="font-heading font-bold text-[var(--text-primary)]">
               Yuk, nilai pemahamanmu!
@@ -78,14 +77,15 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
 <div className="flex justify-center gap-12 mb-6">
 
   <button
-    onClick={() => setRating(1)}
+    onClick={() => setRating(rating === 1 ? null : 1)}
     className="transition-transform duration-300 hover:scale-110"
   >
     <img
       src={sadIcon}
       alt="Kurang memahami"
       className={`
-        w-16 h-16 transition-all duration-300
+        w-16 aspect-square object-contain
+        transition-all duration-300
         ${rating === 1 
           ? "scale-[1.25] brightness-125 -translate-y-1" 
           : "scale-100"
@@ -101,14 +101,15 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
   </button>
 
   <button
-    onClick={() => setRating(2)}
+    onClick={() => setRating(rating === 2 ? null : 2)}
     className="transition-transform duration-300 hover:scale-110"
   >
     <img
       src={neutralIcon}
       alt="Cukup memahami"
       className={`
-        w-16 h-16 transition-all duration-300
+        w-16 aspect-square object-contain
+        transition-all duration-300
         ${rating === 2 
           ? "scale-[1.25] brightness-125 -translate-y-1" 
           : "scale-100"
@@ -124,14 +125,15 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
   </button>
 
   <button
-    onClick={() => setRating(3)}
+    onClick={() => setRating(rating === 3 ? null : 3)}
     className="transition-transform duration-300 hover:scale-110"
   >
     <img
       src={happyIcon}
       alt="Memahami dengan baik"
       className={`
-        w-16 h-16 transition-all duration-300
+        w-16 aspect-square object-contain
+        transition-all duration-300
         ${rating === 3
           ? "scale-[1.25] brightness-125 -translate-y-1"
           : "scale-100"
@@ -147,9 +149,7 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
   </button>
 
 </div>
-
           </div>
-
           <button
             disabled={!rating}
             onClick={onSubmit}
