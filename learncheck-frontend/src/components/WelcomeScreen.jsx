@@ -24,7 +24,7 @@ export default function WelcomeScreen({ tutorialTitle, onStartQuiz, userPrefs })
           transition-all duration-300
         "
       >
-        {/* LOGO + BRAND */}
+
         <div className="flex flex-col items-center mb-3 sm:mb-5 text-center">
           <div className="relative mb-0 sm:mb-0">
             <div className="absolute inset-0 bg-[var(--blue-primary)]/20 rounded-full blur-2xl animate-pulse"></div>
@@ -50,7 +50,6 @@ export default function WelcomeScreen({ tutorialTitle, onStartQuiz, userPrefs })
 
         <div className="w-full h-px bg-gradient-to-r from-transparent via-[var(--text-primary)]/20 to-transparent mb-3 sm:mb-5"></div>
 
-        {/* MODULE CARD */}
         <div
           className="
             relative overflow-hidden
@@ -73,7 +72,6 @@ export default function WelcomeScreen({ tutorialTitle, onStartQuiz, userPrefs })
           </div>
         </div>
 
-        {/* START BUTTON */}
         <button
           onClick={onStartQuiz}
           className="
@@ -95,7 +93,6 @@ export default function WelcomeScreen({ tutorialTitle, onStartQuiz, userPrefs })
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
         </button>
 
-        {/* FOOTER NOTE */}
         <p className="text-center font-mini text-[var(--text-primary)]/50 mt-6">
           Klik tombol di atas untuk memulai kuis pembelajaran
         </p>

@@ -1,4 +1,3 @@
-//cek jawaban pengguna sama kunci jawaban
 export const checkSingleQuestion = (questionData, selectedAnswers) => {
 
     const correctOptions = questionData.options
@@ -11,7 +10,6 @@ export const checkSingleQuestion = (questionData, selectedAnswers) => {
     return isCountMatch && allSelectedAreCorrect;
 };
 
-//hitung total skor jawaban
 export const calculateScore = (quizState) => {
     let correctCount = 0;
     const totalQuestions = quizState.questions.length;

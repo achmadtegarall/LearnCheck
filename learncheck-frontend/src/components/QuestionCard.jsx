@@ -24,7 +24,6 @@ export default function QuestionCard({
       mt-6 p-5 sm:p-6 rounded-xl border-1
     `;
 
-    // JAWABAN BENAR
     if (isCorrectOverall) {
       return (
         <div
@@ -51,7 +50,6 @@ export default function QuestionCard({
       );
     }
 
-    // JAWABAN SALAH
     return (
       <div
         className={`
@@ -74,7 +72,6 @@ export default function QuestionCard({
           {questionData.feedback}
         </p>
 
-        {/* HINT AI KETIKA JAWABAN SALAH */}
         {aiHint && (
           <div
             className={`
@@ -106,7 +103,6 @@ export default function QuestionCard({
       className=
        "w-full pt-2 sm:pt-5">
     
-      {/* PERTANYAAN */}
       <p
         className={`
           font-body sm:font-body lg:font-body
@@ -118,7 +114,6 @@ export default function QuestionCard({
         {questionIndex}. {questionData.question}
       </p>
 
-      {/* OPSI JAWABAN */}
       <div className="space-y-3 sm:space-y-4">
         {questionData.options.map((option) => {
           const isSelected = selectedAnswers.includes(option.label);
@@ -178,13 +173,10 @@ export default function QuestionCard({
         })}
       </div>
 
-      {/* FEEDBACK BENAR / SALAH + AI HINT */}
       <div className="feedback-container">
         {renderConsolidatedFeedback()}
       </div>
 
-
-      {/* HINT MANUAL (TOMBOL PETUNJUK) */}
       {isHintVisible && hintText && (
         <div
           className="

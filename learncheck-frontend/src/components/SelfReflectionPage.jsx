@@ -24,7 +24,6 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
     >
       <div className="w-[var(--max-width-card)]">
         
-        {/* HEADER */}
         <header
           className="
             px-4 sm:px-6 py-3 sm:py-4
@@ -50,7 +49,6 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
           </div>
         </header>
 
-        {/* CONTENT */}
         <div
           className="
             px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12
@@ -59,7 +57,7 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
             transition
           "
         >
-          {/* Title */}
+
           <div className="mb-6 text-center">
             <h1 className="font-heading font-bold text-[var(--text-primary)]">
               Yuk, nilai pemahamanmu!
@@ -79,7 +77,6 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
 
 <div className="flex justify-center gap-12 mb-6">
 
-  {/* SAD */}
   <button
     onClick={() => setRating(1)}
     className="transition-transform duration-300 hover:scale-110"
@@ -103,7 +100,6 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
     />
   </button>
 
-  {/* NEUTRAL */}
   <button
     onClick={() => setRating(2)}
     className="transition-transform duration-300 hover:scale-110"
@@ -127,7 +123,6 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
     />
   </button>
 
-  {/* HAPPY */}
   <button
     onClick={() => setRating(3)}
     className="transition-transform duration-300 hover:scale-110"
@@ -153,12 +148,8 @@ export default function SelfReflectionPage({ rating, setRating, onSubmit, onSkip
 
 </div>
 
-
-
-
           </div>
 
-          {/* SUBMIT BUTTON */}
           <button
             disabled={!rating}
             onClick={onSubmit}

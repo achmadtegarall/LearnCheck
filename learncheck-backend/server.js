@@ -8,10 +8,9 @@ const userRoutes = require("./routes/user.routes");
 
 const app = express();
 
-// --- CORS ---
 const allowedOrigins = [
     "http://localhost:5173",
-    "https://learchcheck-a25-cs155.vercel.app"
+    "https://learncheck-a25-cs155.vercel.app"
 ];
 
 app.use(cors({
@@ -19,8 +18,6 @@ app.use(cors({
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
 }));
-
-// ----------------------------------------------------
 
 app.use(bodyParser.json());
 

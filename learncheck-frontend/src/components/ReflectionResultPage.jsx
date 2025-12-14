@@ -91,21 +91,19 @@ const redWrapper = isDark
           </div>
         </header>
 
-        {/* CONTENT */}
         <div
           className="
             px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12
             rounded-b-2xl shadow bg-[var(--bg-secondary)]
           "
         >
-          {/* PAGE TITLE */}
+
           <div className="mb-6 text-center">
             <h1 className="font-heading font-bold text-[var(--text-primary)]">
               Hasil Refleksi Belajar
             </h1>
           </div>
 
-          {/* FEEDBACK BOX */}
           <div
             className="
               p-6 sm:p-8 rounded-2xl border-1 shadow-sm mb-6
@@ -137,7 +135,6 @@ const redWrapper = isDark
             </p>
           </div>
 
-          {/* SUMMARY BOX */}
           <div
             className="
               p-6 sm:p-8 rounded-2xl border-1 shadow-sm mb-8
@@ -153,7 +150,6 @@ const redWrapper = isDark
             </p>
           </div>
 
-          {/* BUTTONS */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <button
               onClick={onViewHistory}

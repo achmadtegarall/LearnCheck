@@ -106,7 +106,6 @@ export default function QuizContainer() {
     setIsHintVisible(false);
   }, [userId]);
 
-  // Inisialisasi quizState dari localStorage / backend
   useEffect(() => {
     const isStateValid =
       quizState && quizState.questions && quizState.questions.length > 0;
@@ -151,8 +150,6 @@ useEffect(() => {
   }
 }, [quizState]);
 
-
-
   const handleNext = withLoading(() => {
     if (currentQuestionIndex < totalQuestions - 1) {
       setCurrentQuestionIndex((prev) => prev + 1);
@@ -181,7 +178,6 @@ const handleCheckAnswer = async () => {
   const isCorrect = checkSingleQuestion(currentQuestion, answers);
   const initialHint = currentQuestion.hint || null;
 
-  // update status & assign hint awal dari backend
   setQuizState((prev) => ({
     ...prev,
     checkedStatus: {
@@ -202,7 +198,6 @@ const handleCheckAnswer = async () => {
 
   await new Promise((r) => setTimeout(r, 300));
 
-  // backend sudah memberi hint → tidak generate hint AI
   setIsLoading(false);
 };
 
@@ -329,9 +324,6 @@ const handleSkipReflection = async () => {
   await handleViewScore();                
 };
 
-
-
-  // Loading screen
   if (isLoading || !quizState || !currentQuestion) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-[var(--bg-primary)]">
@@ -393,8 +385,6 @@ if (showReflectionResult) {
     );
 }
 
-
-  // Halaman hasil
   if (showResults) {
     const finalScore = {
       correct: quizState.correctCount || 0,
@@ -412,7 +402,6 @@ if (showReflectionResult) {
     );
   }
 
-  // Halaman welcome
   if (isWelcomeScreen && userPrefs) {
     return (
       <WelcomeScreen
@@ -423,7 +412,6 @@ if (showReflectionResult) {
     );
   }
 
-  // Style tombol menggunakan CSS variables
 const secondaryBtn = `
     flex-1 sm:flex-none
     justify-center items-center
@@ -530,9 +518,8 @@ const secondaryBtn = `
             transition-all duration-300
           "
         >
-          {/* HEADER */}
+
           <div className="px-2 sm:px-2 py-2 mb-2 sm:mb-5">
-            {/* logo + brand + badge */}
             <div className="
             lc-header 
             grid grid-cols-1 sm:grid-cols-3 items-center gap-2 sm:gap-0">
@@ -554,10 +541,6 @@ const secondaryBtn = `
                 </div>
               </div>
 
-              
-            
-
-            {/* judul submodul */}
             <div className="header-title flex justify-center items-center my-1 sm:my-0">
               <p className="font-body font-medium text-[var(--text-primary)]/80 text-left sm:text-center">
                 {quizState.moduleTitle}
@@ -570,7 +553,6 @@ const secondaryBtn = `
           </div>
           <div className="w-full h-px bg-gradient-to-r from-transparent via-[var(--text-primary)]/20 to-transparent"></div>
 
-          {/* PROGRESS BAR*/}
           <div className="px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-2 mt-2">
             <p className="font-mini font-medium text-[var(--text-secondary)] opacity-70 text-center sm:text-left">
               Soal {currentQuestionIndex + 1} dari {totalQuestions}
@@ -589,7 +571,6 @@ const secondaryBtn = `
 
           <div className="w-full h-px bg-gradient-to-r from-transparent via-[var(--text-primary)]/20 to-transparent"></div>
 
-          {/* QUESTION CARD */}
           <div className="pb-5 px-4 sm:px-5 pt-4 sm:pt-3 border-b border-[var(--text-primary)]/20">
             <QuestionCard
               key={currentQuestion.question_index}
@@ -605,7 +586,6 @@ const secondaryBtn = `
             />
           </div>
 
-          {/* FOOTER ACTIONS */}
           <div className="p-4 sm:p-5">
             <div className="footer-actions">
               <div className="footer-secondary">

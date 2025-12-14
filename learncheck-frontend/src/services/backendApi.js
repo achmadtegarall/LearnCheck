@@ -5,8 +5,6 @@ const QUIZ_GENERATE_URL = import.meta.env.VITE_QUIZ_GENERATE_URL;
 const RESET_ALL_URL = import.meta.env.VITE_RESET_ALL_URL;
 const RESET_ONE_URL = import.meta.env.VITE_RESET_ONE_URL;
 
-
-//INI BUAT GENERATE SOAL 
 export const fetchQuizDataAndPrefs = async (tutorialId, userId) => {
   console.log(`[API] Fetching quiz for tutorial=${tutorialId}, user=${userId}`);
 
@@ -63,9 +61,6 @@ export const fetchQuizDataAndPrefs = async (tutorialId, userId) => {
   }
 };
 
-
-
-//RESET PER SOAL
 export const resetSingleQuestion = async (tutorialId, userId, questionIndex) => {
   const response = await fetch(RESET_ONE_URL, {
     method: "POST",
@@ -82,9 +77,6 @@ export const resetSingleQuestion = async (tutorialId, userId, questionIndex) => 
   return await response.json();
 };
 
-
-
-//RESET SEMUA SOAL
 export const resetAllQuestions = async (tutorialId, userId) => {
   try {
     const response = await fetch(RESET_ALL_URL, {

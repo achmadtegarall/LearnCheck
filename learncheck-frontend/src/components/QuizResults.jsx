@@ -19,12 +19,10 @@ export default function QuizResults({
 
   const isPassing = percentage >= 70;
 
-  // Data lingkaran skor
   const radius = 70;
   const circumference = 2 * Math.PI * radius;
   const strokeDashoffset = circumference - (percentage / 100) * circumference;
 
-  // Tema & warna
   const logoSrc = theme === "dark" ? logoDark : logoLight;
   const scoreColor = isPassing ? "var(--green-primary)" : "var(--red-primary)";
   const isDark = theme === "dark";
@@ -39,9 +37,6 @@ const redWrapper = isDark
   ? "bg-[var(--red-secondary)] border border-[var(--red-primary)]"
   : "bg-[var(--red-primary)] border border-[var(--red-secondary)]";
 
-
-
-  // Handler konfirmasi ulang kuis
   const handleResetClick = () => setShowConfirmReset(true);
 
   const handleConfirmReset = () => {
@@ -66,7 +61,6 @@ const redWrapper = isDark
         w-[var(--max-width-card)]
 
         ">
-          {/* HEADER */}
           <header
             className="
               px-4 sm:px-6 py-3 sm:py-4
@@ -93,7 +87,6 @@ const redWrapper = isDark
             </div>
           </header>
 
-          {/* CONTENT */}
           <div
             className="
               px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12
@@ -102,7 +95,7 @@ const redWrapper = isDark
               transition
             "
           >
-            {/* Judul & deskripsi */}
+
             <div className="mb-8 sm:mb-10 text-center">
               <h1 className="font-title font-bold text-[var(--blue-primary)]">
                 Kuis Berhasil Diselesaikan! 
@@ -112,7 +105,6 @@ const redWrapper = isDark
               </p>
             </div>
 
-            {/* KOTAK RINGKASAN SKOR */}
             <div
               className="
                 p-5 sm:p-5 lg:p-8 rounded-2xl border-1 shadow-sm mb-8
@@ -131,7 +123,6 @@ const redWrapper = isDark
                     </p>
                   </div>
                 </div>
-
 
                 <div className="flex flex-col items-center text-center h-full">
                   <p className="font-heading font-semibold opacity-80 mb-2 sm:mb-2">
@@ -186,7 +177,6 @@ const redWrapper = isDark
               </div>
             </div>
 
-            {/* ACTION BUTTONS */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <button
                 onClick={onExitToFirstQuestion}
@@ -218,7 +208,6 @@ const redWrapper = isDark
         </div>
       </div>
 
-      {/* MODAL KONFIRMASI ULANG KUIS */}
       <RepeatQuiz
         visible={showConfirmReset}
         onConfirm={handleConfirmReset}

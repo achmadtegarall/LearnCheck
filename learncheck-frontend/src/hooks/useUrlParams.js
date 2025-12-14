@@ -1,4 +1,3 @@
-//Mengambil user dan tutorial dari URL (versi Dicoding)
 import { useMemo } from 'react';
 
 export function useUrlParams() {
